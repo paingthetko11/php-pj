@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1f2739;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .header {
+            background-color: #1f2739;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        a{
+            color:white;    
+        }
+        a:hover{
+            color:rgb(231, 216, 144);    
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+
+        img{
+            border-radius:30px !important;
+        }
+
+        .footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* footer section*/
+.footer_section {
+  padding: 20px;
+  background-color: #1f2739;
+}
+
+.footer_section .social_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 25px 0;
+}
+
+.footer_section .social_container h4 {
+  color: #a9a6a6;
+  font-weight: bold;
+}
+
+.footer_section .social_container .social_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer_section .social_container .social_box a {
+  margin: 0 10px;
+}
+
+.footer_section .social_container .social_box a img {
+  max-width: 100%;
+}
+
+.footer_section p {
+  margin: 0;
+  text-align: center;
+  color: #ffffff;
+}
+
+.footer_section a {
+  color: #ffffff;
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <br>
+        <h1>Welcome, Admin!</h1>
+        <h3>You can customized 4 menus below!</h3>
+    </div>
+    <div>
+        <br>
+        <div class="row">
+           <div class="col-2"></div>
+           <div class="col-3">   <center>
+            <a href="food.php">
+              <img src="img/food.webp" width="300"/>
+         <p class="mt-2">FOOD LIST</p></center>
+            </a>
+           </div>
+           <div class="col-2"></div>
+           <div class="col-3"> <center>
+            <a href="drink.php">
+              <img src="img/drink.webp" width="300" />
+               <p class="mt-2">DRINK LIST</p></center>
+            </a>
+           </div>
+           <div class="col-2"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-3"><center>
+             <a href="order.php"><img src="img/order.webp" width="300" />
+                <p class="mt-2">ORDER LIST</p></center>
+            </a>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-3"><center>
+             <a href="message.php"><img src="img/con.webp" width="300"/>
+                <p class="mt-2">MESSAGE LIST</p></center>
+            </a>
+            </div>
+            <div class="col-2"></div>
+         </div>
+    </div>
+    <br><center>
+    <a role="button" class="btn btn-danger" href="../index.html">Log Out</a>
+</center>
+
+</body>
+</html>
